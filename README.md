@@ -40,10 +40,8 @@ After completing the build, I deployed the app on Firebase's free tier, making i
  During the development of ACONEWS, I faced a few key challenges:
 
  #### 1. API Rate Limits:
- The GNews API's free tier had strict rate limits, which restricted the number of requests I could make. To overcome this, I optimized API calls by only fetching new data when necessary and implemented pagination to load articles in smaller batches, reducing the overall API requests.
-
+To handle restrictions, I optimized API calls and implemented pagination to reduce the number of requests.
 #### 2. Responsive Design:
- Ensuring the app worked well across mobile, tablet, and desktop devices was another challenge. I tackled this by using flexible layouts, media queries, and a full-screen mobile menu for smooth navigation on smaller screens.
-
+I used flexible layouts and a full-screen mobile menu to ensure the app worked well on all devices.
 #### 3. Firebase Deployment: 
-While Firebase is straightforward, I had to carefully manage the deployment process, especially ensuring all configurations were set correctly for smooth app hosting. Careful attention to deployment settings helped overcome this.
+I carefully configured Firebase for smooth hosting and deployment of the app.
