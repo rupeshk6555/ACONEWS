@@ -79,7 +79,7 @@ const CategorySelector = () => {
                   setSelectedCategory(item.name.toLowerCase());
                   setMenuOpen(false);
                 }}
-                className="text-lg text-white hover:text-green-600"
+                className="text-start text-3xl text-white hover:text-green-600"
               >
                 {item.name}
               </button>

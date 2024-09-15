@@ -7,11 +7,11 @@ const PaginationButton = ({ setCurrentPage, CurrentPage }) => {
     setCurrentPage(selected);
   };
   return (
-    <div>
+    <div className=" my-10">
       <ReactPaginate
         breakLabel="..."
         nextLabel={
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-green-200 text-black">
+          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-green-200 text-black ">
             <BsChevronRight />
           </span>
         }

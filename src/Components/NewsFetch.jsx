@@ -13,7 +13,7 @@ const NewsFetch = ({ category, searchQuery }) => {
     const fetchArticles = async () => {
       try {
         setLoading(true);
-        const apikey = "383b391ffa450d2d9427b301df39e1cc";
+        const apikey = "9004ad13580fdddfcb404b258fc276e3";
         const baseUrl = "https://gnews.io/api/v4/";
         const url = searchQuery
           ? `${baseUrl}search?q=${encodeURIComponent(searchQuery)}&lang=en&country=in&max=10&page=${currentPage + 1}&apikey=${apikey}`
@@ -46,7 +46,7 @@ const NewsFetch = ({ category, searchQuery }) => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 p-10 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-3 xl:grid-cols-4">
         {articles.length > 0 ? (
           articles.map((article, index) => <Card key={index} {...article} />)
         ) : (
